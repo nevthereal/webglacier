@@ -31,7 +31,9 @@
 			<h3 class="h3">Links</h3>
 			<ul class="list-disc list-inside">
 				<li>
-					<a class="anchor" href="https://github.com/nevthereal/webglacier">Repository</a>
+					<a class="anchor" target="_blank" href="https://github.com/nevthereal/webglacier"
+						>Repository</a
+					>
 				</li>
 			</ul>
 		</div>
@@ -39,12 +41,12 @@
 			<h3 class="h3">Links</h3>
 			<ul class="list-disc list-inside">
 				<li>
-					<a class="anchor" href="https://github.com/nevthereal">GitHub</a>
+					<a class="anchor" target="_blank" href="https://github.com/nevthereal">GitHub</a>
 				</li>
 				<li>
-					<a class="anchor" href="https://x.com/BremNeville">Twitter</a>
+					<a class="anchor" target="_blank" href="https://x.com/BremNeville">Twitter</a>
 				</li>
-				<li><a class="anchor" href="mailto:">Contact</a></li>
+				<li><a class="anchor" target="_blank" href="mailto:">Contact</a></li>
 			</ul>
 		</div>
 	</footer>
