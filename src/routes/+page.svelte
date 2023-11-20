@@ -1,9 +1,9 @@
 <div class="flex w-full h-full">
 	<div class="flex flex-col text-center m-auto gap-2">
-		<p class="font-mono text-gray-300">Hello World, my name is</p>
+		<p class="font-mono dark:text-primary-300 text-primary-700">Hello World, my name is</p>
 		<div class="flex flex-col gap-2">
 			<h1 class="text-6xl font-bold">Neville Brem</h1>
-			<p class="font-bold italic text-gray-300">
+			<p class="font-bold italic dark:text-primary-300 text-primary-700">
 				<i class="fa-solid fa-map-pin" /> Zurich, Switzerland
 			</p>
 		</div>
