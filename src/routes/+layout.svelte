@@ -2,17 +2,50 @@
 	import '../app.postcss';
 
 	// Floating UI for Popups
-	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
-	import { LightSwitch, storePopup } from '@skeletonlabs/skeleton';
-	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
+	import { AppRail, LightSwitch, AppRailAnchor } from '@skeletonlabs/skeleton';
+	import { page } from '$app/stores';
+
+	let url = '/';
+
+	if ('/projects'.includes($page.url.pathname)) url = '/projects';
+	if ('/pricing'.includes($page.url.pathname)) url = '/elements';
+	if ('/contact'.includes($page.url.pathname)) url = '/svelte';
 </script>
 
 <div>
-	<nav class="m-6 flex justify-between">
-		<a class="btn" href="/"><p class="font-[Fredoka] font-semibold h2">WG</p></a>
-		<div class="my-auto flex gap-4" />
+	<nav class="h-[10dvh] p-6 flex justify-between font-bold">
+		<a class="btn" href="/">LOGO HERE</a>
+		<div class="my-auto flex gap-4">
+			<a href="/projects">Projects</a>
+			<a href="/pricing">Pricing</a>
+			<a href="/contact">Contact</a>
+		</div>
 		<LightSwitch />
 	</nav>
 	<slot />
-	<footer class="" />
+	<footer class="w-full grid grid-cols-3 p-6">
+		<div class="flex">
+			<p class="m-auto">logo here</p>
+		</div>
+		<div>
+			<h3 class="h3">Links</h3>
+			<ul class="list-disc list-inside">
+				<li>
+					<a class="anchor" href="https://github.com/nevthereal/webglacier">Repository</a>
+				</li>
+			</ul>
+		</div>
+		<div>
+			<h3 class="h3">Links</h3>
+			<ul class="list-disc list-inside">
+				<li>
+					<a class="anchor" href="https://github.com/nevthereal">GitHub</a>
+				</li>
+				<li>
+					<a class="anchor" href="https://x.com/BremNeville">Twitter</a>
+				</li>
+				<li><a class="anchor" href="mailto:">Contact</a></li>
+			</ul>
+		</div>
+	</footer>
 </div>
