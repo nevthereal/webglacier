@@ -8,8 +8,9 @@
 					>blazingly</span
 				> fast, responsive websites
 			</p>
-			<a class="btn mt-4 variant-ghost-primary border-b-2 border-b-primary-500" href="#about"
-				>Dive in!</a
+			<a
+				class="btn mt-4 variant-ghost-primary border-b-2 border-b-primary-500 rounded-xl"
+				href="#about">Dive in!</a
 			>
 		</div>
 	</div>
