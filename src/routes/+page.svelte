@@ -2,13 +2,15 @@
 	<div class="flex">
 		<div class="m-auto">
 			<h1 class=" h1">WebGlacier</h1>
-			<p class="mt-4 italic text-primary-800 dark:text-primary-200 font-bold">
+			<p class="mt-4 text-secondary-500 font-bold">
 				<span
-					class="bg-gradient-to-br from-red-500 to-yellow-500 bg-clip-text text-transparent box-decoration-clone"
+					class="bg-gradient-to-br from-red-500 to-yellow-500 bg-clip-text text-transparent box-decoration-clone italic"
 					>blazingly</span
 				> fast, responsive websites
 			</p>
-			<a class="btn mt-4 variant-ghost-primary" href="#about">Dive in!</a>
+			<a class="btn mt-4 variant-ghost-primary border-b-2 border-b-primary-500" href="#about"
+				>Dive in!</a
+			>
 		</div>
 	</div>
 	<div class="flex">

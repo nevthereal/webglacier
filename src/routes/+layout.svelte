@@ -4,12 +4,6 @@
 	// Floating UI for Popups
 	import { AppRail, LightSwitch, AppRailAnchor } from '@skeletonlabs/skeleton';
 	import { page } from '$app/stores';
-
-	let url = '/';
-
-	if ('/projects'.includes($page.url.pathname)) url = '/projects';
-	if ('/pricing'.includes($page.url.pathname)) url = '/elements';
-	if ('/contact'.includes($page.url.pathname)) url = '/svelte';
 </script>
 
 <div>
