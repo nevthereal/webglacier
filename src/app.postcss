@@ -3,6 +3,17 @@
 @tailwind utilities;
 @tailwind variants;
 
+@font-face {
+	font-family: 'Bebas Neue';
+	src: url('/fonts/BebasNeue-Regular.ttf');
+}
+
+:root [data-theme='wintry'] {
+	--theme-rounded-base: 0.75rem;
+	--theme-rounded-container: 0.75rem;
+	--theme-font-family-heading: 'Bebas Neue', sans-serif;
+}
+
 a {
 	@apply hover:scale-105 duration-200;
 }

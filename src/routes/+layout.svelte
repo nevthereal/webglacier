@@ -27,7 +27,7 @@
 		<div class="my-auto flex gap-4">
 			{#each routes as route}
 				<a
-					class={`rounded-xl p-2 ${$page.url.pathname === route.route && `bg-primary-500`}`}
+					class={`btn p-2 ${$page.url.pathname === route.route && `bg-primary-500`}`}
 					href={route.route}>{route.name}</a
 				>
 			{/each}
