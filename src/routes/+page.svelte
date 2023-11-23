@@ -1,15 +1,18 @@
-<div class="grid md:grid-cols-2 h-[90dvh]">
+<title>WebGlacier</title>
+<div class="grid md:grid-cols-2 h-[60dvh]">
 	<div class="flex">
 		<div class="m-auto">
-			<h1 class="h1">WebGlacier</h1>
+			<h1 class="h1 text-6xl">WebGlacier</h1>
 			<p class="mt-4 text-secondary-500 font-bold">
 				<span
 					class="bg-gradient-to-br from-red-500 to-yellow-500 bg-clip-text text-transparent box-decoration-clone italic"
 					>blazingly</span
 				> fast, responsive websites
 			</p>
-			<a class="btn mt-4 variant-ghost-primary border-b-2 border-b-primary-500" href="#about"
-				>Dive in!</a
+			<a class="btn mt-4 variant-ghost-primary border-b-2 border-b-primary-500 group" href="#about"
+				><i
+					class="fa-solid fa-arrow-down pr-2 group-hover:translate-y-1 duration-200 ease-in-out"
+				/>Find out more</a
 			>
 		</div>
 	</div>
@@ -17,9 +20,9 @@
 		<img src="/img/graphic.png" alt="fancy graphic" class="w-[50%] m-auto" />
 	</div>
 </div>
-<div id="about">
+<div id="about" class="py-8">
 	<div class="grid grid-cols-2">
-		<div class="m-auto max-w-[60%]">
+		<div class="m-auto max-w-[60%] md:order-last">
 			<h2 class="h2 mb-4">About Me</h2>
 			<p>
 				Hey, there I am a 16 years old front-end web dev. I'm based in Zurich, Switzerland. I love
@@ -33,10 +36,12 @@
 			class="m-auto md:w-[40%] rounded-xl shadow-lg shadow-black/20 hover:shadow-black/50 duration-200 ease-in-out"
 		/>
 	</div>
-	<div class="max-w-[60%] mx-auto my-16">
+	<div class="max-w-[60%] mx-auto mt-16">
 		<h2 class="h2 m-auto">Skills & Technologies:</h2>
 		<div class="grid md:grid-cols-2 gap-4 my-6 mx-auto">
-			<div class="card p-6">
+			<div
+				class="card p-6 shadow-lg shadow-black/20 hover:shadow-black/50 duration-200 ease-in-out"
+			>
 				<h3 class="h3">Stack 1</h3>
 				<ul class=" list-disc list-inside">
 					<li>React</li>
@@ -45,7 +50,9 @@
 					<li>Framer Motion</li>
 				</ul>
 			</div>
-			<div class="card p-6">
+			<div
+				class="card p-6 shadow-lg shadow-black/20 hover:shadow-black/50 duration-200 ease-in-out"
+			>
 				<h3 class="h3">Stack 2 (current)</h3>
 				<ul class=" list-disc list-inside">
 					<li>Skeleton UI</li>
@@ -59,8 +66,12 @@
 			<h2 class="h2">Projects & Experience</h2>
 			<div class="mt-2">
 				<p>To see my projects click here:</p>
-				<a href="/projects" class="btn variant-ghost-primary border-b-2 border-b-primary-500 mt-2"
-					><i class="fa-solid fa-arrow-right mr-2" /> Projects</a
+				<a
+					href="/projects"
+					class="btn variant-ghost-primary border-b-2 border-b-primary-500 mt-2 group"
+					><i
+						class="fa-solid fa-arrow-right mr-2 group-hover:translate-x-1 duration-200 ease-in-out"
+					/> Projects</a
 				>
 			</div>
 		</div>
