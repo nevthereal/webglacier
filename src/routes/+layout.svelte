@@ -23,7 +23,7 @@
 
 <div>
 	<nav class="h-[10dvh] p-6 flex justify-between font-bold">
-		<a class="btn" href="/">LOGO HERE</a>
+		<a class="btn" href="/"><img src="/img/favicon.png" alt="logo" class="w-20" /></a>
 		<div class="my-auto flex gap-4">
 			{#each routes as route}
 				<a
@@ -36,8 +36,9 @@
 	</nav>
 	<slot />
 	<footer class="w-full grid grid-cols-3 p-6">
-		<div class="flex">
-			<p class="m-auto">LOGO HERE</p>
+		<div class="mx-auto">
+			<img src="/img/favicon.png" alt="logo" class="w-36 mx-auto" />
+			<p class="font-serif italic font-bold">© WebGlacier 2023</p>
 		</div>
 		<div>
 			<h3 class="h3">Links</h3>
@@ -50,7 +51,7 @@
 			</ul>
 		</div>
 		<div>
-			<h3 class="h3">Links</h3>
+			<h3 class="h3">Find me</h3>
 			<ul class="list-disc list-inside">
 				<li>
 					<a class="anchor" target="_blank" href="https://github.com/nevthereal">GitHub</a>
