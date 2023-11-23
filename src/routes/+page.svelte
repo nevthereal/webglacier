@@ -35,8 +35,7 @@
 		</p>
 	</div>
 	<div class="grid grid-cols-2 m-6">
-		<h2 class="h2 m-auto">Skills & Technologies:</h2>
-		<div class="grid grid-cols-2 gap-4 my-6">
+		<div class="grid grid-cols-2 gap-4 my-6 mx-auto">
 			<div class="card p-6">
 				<h3 class="h3">Stack 1</h3>
 				<ul class=" list-disc list-inside">
@@ -55,6 +54,18 @@
 					<li>TypeScript</li>
 				</ul>
 			</div>
+		</div>
+		<h2 class="h2 m-auto">Skills & Technologies:</h2>
+	</div>
+	<div class="text-center m-6">
+		<h2 class="h2">Projects & Experience</h2>
+		<div class="my-2">
+			<p>To see my projects click here:</p>
+			<a
+				href="/projects"
+				class="btn variant-ghost-primary rounded-xl border-b-2 border-b-primary-500 my-2"
+				><i class="fa-solid fa-arrow-right mr-2" /> Projects</a
+			>
 		</div>
 	</div>
 </div>
