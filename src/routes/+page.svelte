@@ -27,15 +27,16 @@
 			class="m-auto md:w-[40%] rounded-xl shadow-lg shadow-black/20 hover:shadow-black/50 duration-200 ease-in-out"
 		/>
 	</div>
-	<div class="flex flex-col py-20">
-		<p class="w-[60%] mx-auto">
+	<div class="flex flex-col py-16">
+		<p class="max-w-[60%] mx-auto">
 			Hey, there I am a 16 years old front-end web dev. I'm based in Zurich, Switzerland. I love
 			creating websites and learning new technologies. I have a keen eye on detail and very fast
 			response times, so don't contact me if you don't need a beautiful website ASAP.
 		</p>
 	</div>
-	<div class="grid grid-cols-2 m-6">
-		<div class="grid grid-cols-2 gap-4 my-6 mx-auto">
+	<div class="max-w-[60%] mx-auto">
+		<h2 class="h2 m-auto">Skills & Technologies:</h2>
+		<div class="grid md:grid-cols-2 gap-4 my-6 mx-auto">
 			<div class="card p-6">
 				<h3 class="h3">Stack 1</h3>
 				<ul class=" list-disc list-inside">
@@ -55,7 +56,6 @@
 				</ul>
 			</div>
 		</div>
-		<h2 class="h2 m-auto">Skills & Technologies:</h2>
 	</div>
 	<div class="text-center m-6">
 		<h2 class="h2">Projects & Experience</h2>

@@ -37,7 +37,7 @@
 	<slot />
 	<footer class="w-full grid grid-cols-3 p-6">
 		<div class="flex">
-			<p class="m-auto">logo here</p>
+			<p class="m-auto">LOGO HERE</p>
 		</div>
 		<div>
 			<h3 class="h3">Links</h3>
