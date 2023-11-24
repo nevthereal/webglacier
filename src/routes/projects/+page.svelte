@@ -27,9 +27,9 @@
 		<h1 class="h1 text-7xl">Projects</h1>
 		<h3 class="h3">Showcase of previous work</h3>
 	</div>
-	<div class="flex w-full justify-evenly">
+	<div class="grid w-full grid-cols-3 gap-16">
 		{#each _projects as project}
-			<div class="card p-8">
+			<div class="card variant-glass-primary p-8">
 				<h2 class="h2">{project.name}</h2>
 				<p>{project.description.substring(0, 30)}...</p>
 				<button
