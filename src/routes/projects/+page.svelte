@@ -22,9 +22,21 @@
 
 <title>WebGlacier - Projects</title>
 <Modal />
-
-<div>
-	{#each _projects as project}
-		<button on:click={() => triggerModal(project)}>{project.name}</button>
-	{/each}
+<div class="px-16">
+	<div class="text-center my-8">
+		<h1 class="h1 text-7xl">Projects</h1>
+		<h3 class="h3">Showcase of previous work</h3>
+	</div>
+	<div class="flex w-full justify-evenly">
+		{#each _projects as project}
+			<div class="card p-8">
+				<h2 class="h2">{project.name}</h2>
+				<p>{project.description.substring(0, 30)}...</p>
+				<button
+					class="btn variant-ghost-primary border-b-2 border-b-primary-500 mt-4"
+					on:click={() => triggerModal(project)}>See more</button
+				>
+			</div>
+		{/each}
+	</div>
 </div>

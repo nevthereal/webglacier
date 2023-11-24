@@ -66,7 +66,9 @@
 			<h2 class="h2">Projects & Experience</h2>
 			<div class="mt-2">
 				<p>To see my projects click here:</p>
-				<a href="/projects" class="mt-2 group"
+				<a
+					href="/projects"
+					class="btn variant-ghost-primary border-b-2 border-b-primary-500 mt-2 group"
 					><i
 						class="fa-solid fa-arrow-right mr-2 group-hover:translate-x-1 duration-200 ease-in-out"
 					/> Projects</a
