@@ -7,3 +7,10 @@ declare namespace App {
 	// interface Error {}
 	// interface Platform {}
 }
+interface Project {
+	name: string;
+	description: string;
+	stack: string[];
+	ghLink: string;
+	webLink: string;
+}
