@@ -13,4 +13,5 @@ interface Project {
 	stack: string[];
 	ghLink: string;
 	webLink: string;
+	icon: string;
 }
