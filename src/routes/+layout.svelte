@@ -3,34 +3,14 @@
 
 	// Floating UI for Popups
 	import { LightSwitch } from '@skeletonlabs/skeleton';
-	import { page } from '$app/stores';
-
-	const routes = [
-		{
-			route: '/projects',
-			name: 'Projects'
-		},
-		{
-			route: '/pricing',
-			name: 'Pricing'
-		},
-		{
-			route: '/contact',
-			name: 'Contact'
-		}
-	];
 </script>
 
 <div>
 	<nav class="h-[10dvh] p-6 flex justify-between font-bold">
 		<a class="btn" href="/"><img src="/img/favicon.png" alt="logo" class="w-20" /></a>
 		<div class="my-auto flex gap-4">
-			{#each routes as route}
-				<a
-					class={`btn p-2 ${$page.url.pathname === route.route && `bg-primary-500`}`}
-					href={route.route}>{route.name}</a
-				>
-			{/each}
+			<a class="btn p-2" href="/projects">Projects</a>
+			<a class="btn p-2" href="/contact">Contact</a>
 		</div>
 		<LightSwitch />
 	</nav>

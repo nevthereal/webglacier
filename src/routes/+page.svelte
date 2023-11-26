@@ -7,19 +7,36 @@
 				<span
 					class="bg-gradient-to-br from-red-500 to-yellow-500 bg-clip-text text-transparent box-decoration-clone italic"
 					>blazingly</span
-				> fast, responsive websites
+				> fast, user-friendly web apps
 			</p>
-			<a class="btn mt-4 variant-ghost-primary border-b-2 border-b-primary-500 group" href="#about"
+			<a class="btn mt-2 variant-ghost-primary border-b-2 border-b-primary-500 group" href="#about"
 				><i
 					class="fa-solid fa-arrow-down pr-2 group-hover:translate-y-1 duration-200 ease-in-out"
 				/>Find out more</a
 			>
 		</div>
 	</div>
+
 	<div class="flex">
 		<img src="/img/graphic.png" alt="fancy graphic" class="w-[50%] m-auto" />
 	</div>
+
+	<div class="col-span-2 grid grid-cols-3 p-16">
+		<div class="m-auto">
+			<h1 class="h1">2+ Years</h1>
+			<h4 class="h4 text-primary-500">of experience</h4>
+		</div>
+		<div class="m-auto">
+			<h1 class="h1">500+</h1>
+			<h4 class="h4 text-primary-500">github commits</h4>
+		</div>
+		<div class="m-auto">
+			<h1 class="h1">5+ Hours</h1>
+			<h4 class="h4 text-primary-500">per week spent coding</h4>
+		</div>
+	</div>
 </div>
+
 <div id="about" class="py-8">
 	<div class="grid grid-cols-2">
 		<div class="m-auto max-w-[60%] md:order-last">
