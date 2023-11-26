@@ -31,8 +31,8 @@
 			<h4 class="h4 text-primary-500">github commits</h4>
 		</div>
 		<div class="m-auto">
-			<h1 class="h1">5+ Hours</h1>
-			<h4 class="h4 text-primary-500">per week spent coding</h4>
+			<h1 class="h1">3+ Projects</h1>
+			<h4 class="h4 text-primary-500">for production</h4>
 		</div>
 	</div>
 </div>
