@@ -1,15 +1,17 @@
 <title>WebGlacier</title>
-<div class="grid md:grid-cols-2 h-[60dvh]">
+<div class="md:grid md:grid-cols-2 md:h-[60dvh]">
 	<div class="flex">
-		<div class="m-auto">
-			<h1 class="h1 text-6xl">WebGlacier</h1>
-			<p class="mt-4 text-secondary-500 font-bold">
+		<div class="m-auto flex flex-col">
+			<h1 class="h1 text-6xl text-center md:text-left">WebGlacier</h1>
+			<p class="md:mt-4 text-secondary-500 font-bold">
 				<span
 					class="bg-gradient-to-br from-red-500 to-yellow-500 bg-clip-text text-transparent box-decoration-clone italic"
 					>blazingly</span
 				> fast, user-friendly web apps
 			</p>
-			<a class="btn mt-2 variant-ghost-primary border-b-2 border-b-primary-500 group" href="#about"
+			<a
+				class="btn mt-2 variant-ghost-primary border-b-2 border-b-primary-500 group w-min mx-auto md:mx-0"
+				href="#about"
 				><i
 					class="fa-solid fa-arrow-down pr-2 group-hover:translate-y-1 duration-200 ease-in-out"
 				/>Find out more</a
@@ -17,43 +19,43 @@
 		</div>
 	</div>
 
-	<div class="flex">
+	<div class="flex mt-4 md:mt-0">
 		<img src="/img/graphic.png" alt="fancy graphic" class="w-[50%] m-auto" />
 	</div>
 
-	<div class="col-span-2 grid grid-cols-3 p-16">
+	<div class="col-span-2 grid gap-2 md:gap-0 md:grid-flow-col p-6 md:p-16">
 		<div class="m-auto">
-			<h1 class="h1">2+ Years</h1>
-			<h4 class="h4 text-primary-500">of experience</h4>
+			<h1 class="font-bold h1 text-center md:text-left">2+ Years</h1>
+			<h4 class="h4 text-primary-500 text-center md:text-left">of experience</h4>
 		</div>
 		<div class="m-auto">
-			<h1 class="h1">500+</h1>
-			<h4 class="h4 text-primary-500">github commits</h4>
+			<h1 class="font-bold h1 text-center md:text-left">500+</h1>
+			<h4 class="h4 text-primary-500 text-center md:text-left">github commits</h4>
 		</div>
 		<div class="m-auto">
-			<h1 class="h1">3+ Projects</h1>
-			<h4 class="h4 text-primary-500">for production</h4>
+			<h1 class="font-bold h1 text-center md:text-left">3+ Projects</h1>
+			<h4 class="h4 text-primary-500 text-center md:text-left">for production</h4>
 		</div>
 	</div>
 </div>
 
 <div id="about" class="py-8">
-	<div class="grid grid-cols-2">
-		<div class="m-auto max-w-[60%] md:order-last">
-			<h2 class="h2 mb-4">About Me</h2>
+	<div class="grid md:grid-cols-2">
+		<img
+			src="/img/me.jpg"
+			alt="me"
+			class="m-auto md:w-[40%] w-[80%] rounded-xl shadow-lg shadow-black/20 hover:shadow-black/50 duration-200 ease-in-out"
+		/>
+		<div class="m-auto max-w-[80%] md:max-w-[60%]">
+			<h2 class="h2 my-4">About Me</h2>
 			<p>
 				Hey, there I am a 16 years old front-end web dev. I'm based in Zurich, Switzerland. I love
 				creating websites and learning new technologies. I have a keen eye on detail and very fast
 				response times, so don't contact me if you don't need a beautiful website ASAP.
 			</p>
 		</div>
-		<img
-			src="/img/me.jpg"
-			alt="me"
-			class="m-auto md:w-[40%] rounded-xl shadow-lg shadow-black/20 hover:shadow-black/50 duration-200 ease-in-out"
-		/>
 	</div>
-	<div class="max-w-[60%] mx-auto mt-16">
+	<div class="max-w-[80%] md:max-w-[60%] mx-auto mt-16">
 		<h2 class="h2 m-auto">Skills & Technologies:</h2>
 		<div class="grid md:grid-cols-2 gap-4 my-6 mx-auto">
 			<div

@@ -22,18 +22,18 @@
 
 <title>WebGlacier - Projects</title>
 <Modal />
-<div class="px-16">
+<div class="px-8 md:px-16">
 	<div class="text-center my-8">
 		<h1 class="h1 text-7xl">Projects</h1>
 		<h3 class="h3">Showcase of previous work</h3>
 	</div>
-	<p class="w-[50%] mb-8 mx-auto">
+	<p class="md:w-[50%] mb-8 mx-auto">
 		This is a selection of my previous work that went to production. You can see more of my
 		experiences and work on <a href="https://github.com/nevthereal" class="anchor" target="_blank"
 			>GitHub</a
 		>.
 	</p>
-	<div class="grid w-full grid-cols-3 gap-16">
+	<div class="grid w-full md:grid-flow-col gap-6 md:gap-16">
 		{#each _projects as project}
 			<div class="card variant-glass-primary p-8">
 				<div class="flex justify-between">

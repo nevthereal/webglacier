@@ -6,21 +6,25 @@
 </script>
 
 <div>
-	<nav class="h-[10dvh] p-6 flex justify-between font-bold">
-		<a class="btn" href="/"><img src="/img/favicon.png" alt="logo" class="w-20" /></a>
+	<nav class="h-[12dvh] md:h-[10dvh] p-2 md:p-6 flex justify-between font-bold">
+		<a class="btn" href="/"><img src="/img/favicon.png" alt="logo" class="w-16 md:w-20" /></a>
 		<div class="my-auto flex gap-4">
 			<a class="btn p-2" href="/projects">Projects</a>
 			<a class="btn p-2" href="/contact">Contact</a>
 		</div>
-		<LightSwitch />
+		<span class="my-auto">
+			<LightSwitch />
+		</span>
 	</nav>
 	<slot />
-	<footer class="w-full grid grid-cols-3 p-6">
+	<footer class="w-full md:grid md:grid-cols-3 p-6">
 		<div class="mx-auto">
-			<img src="/img/favicon.png" alt="logo" class="w-36 mx-auto" />
-			<p class="font-serif italic font-bold">© WebGlacier 2023</p>
+			<img src="/img/favicon.png" alt="logo" class="w-36 mx-auto hidden md:block" />
+			<p class="font-serif italic font-bold text-center md:text-left mb-4 md:mb-0">
+				© WebGlacier 2023
+			</p>
 		</div>
-		<div>
+		<div class="my-2 md:my-0">
 			<h3 class="h3">Links</h3>
 			<ul class="list-disc list-inside">
 				<li>
@@ -30,7 +34,7 @@
 				</li>
 			</ul>
 		</div>
-		<div>
+		<div class="my-2 md:my-0">
 			<h3 class="h3">Find me</h3>
 			<ul class="list-disc list-inside">
 				<li>
