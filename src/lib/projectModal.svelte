@@ -17,11 +17,15 @@
 		</ul>
 	</div>
 	<div class="flex gap-2 mt-4">
-		<a href={projectInfo.webLink} class="btn variant-ghost-primary border-b-2 border-b-primary-500"
-			>Website</a
+		<a
+			href={projectInfo.webLink}
+			target="_blank"
+			class="btn variant-ghost-primary border-b-2 border-b-primary-500">Website</a
 		>
-		<a href={projectInfo.ghLink} class="btn variant-ghost-primary border-b-2 border-b-primary-500"
-			>GitHub</a
+		<a
+			href={projectInfo.ghLink}
+			target="_blank"
+			class="btn variant-ghost-primary border-b-2 border-b-primary-500">GitHub</a
 		>
 	</div>
 </div>
