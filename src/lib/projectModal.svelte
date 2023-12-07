@@ -3,7 +3,10 @@
 </script>
 
 <div class="card max-w-[60%] variant-glass-primary p-12 opacity-100">
-	<h1 class="h1 mb-2">{projectInfo.name}</h1>
+	<div class="flex justify-between mb-2">
+		<h1 class="h1">{projectInfo.name}</h1>
+		<i class="fa-solid fa-xmark text-2xl btn-icon cursor-pointer hidden md:block" />
+	</div>
 	<div class="mb-2">
 		<h3 class="h3">About this project</h3>
 		<p>{projectInfo.description}</p>
