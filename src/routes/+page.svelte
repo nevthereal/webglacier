@@ -1,5 +1,5 @@
 <title>WebGlacier</title>
-<div class="md:grid md:grid-cols-2 md:h-[60dvh]">
+<div class="md:grid md:grid-cols-2 md:h-[60dvh] mt-2">
 	<div class="flex">
 		<div class="m-auto flex flex-col">
 			<h1 class="h1 text-6xl text-center md:text-left">WebGlacier</h1>

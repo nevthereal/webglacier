@@ -2,7 +2,7 @@
 	export let projectInfo: Project;
 </script>
 
-<div class="card max-w-[60%] variant-glass-primary p-12 opacity-100">
+<div class="card variant-glass-primary p-12 opacity-100">
 	<div class="flex justify-between mb-2">
 		<h1 class="h1">{projectInfo.name}</h1>
 		<i class="fa-solid fa-xmark text-2xl btn-icon cursor-pointer hidden md:block" />
