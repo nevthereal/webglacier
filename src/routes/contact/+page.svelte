@@ -1,17 +1,11 @@
 <script lang="ts">
 	import emailjs from '@emailjs/browser';
-	import { z } from 'zod';
 
-	const formSchema = z.object({
-		name: z.string().min(3, 'Must be 3 or more characters long'),
-		email: z.string().email('Please provide a real email'),
-		message: z.string().min(3, 'Your message is too short')
-	});
-
-	function sendEmail(e) {
-		emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_PUBLIC_KEY').then(
+	function sendEmail(e: any) {
+		emailjs.sendForm('service_m5dhn7u', 'template_0ea3ewq', e.target, '0tvqgP1sw-5fQmDto').then(
 			(result) => {
 				console.log('SUCCESS!', result.text);
+				e.target.reset();
 			},
 			(error) => {
 				console.log('FAILED...', error.text);
@@ -26,19 +20,19 @@
 		<h3 class="h3">Contact me via Email</h3>
 	</div>
 
-	<form on:submit|preventDefault={sendEmail}>
-		<label class="label">
+	<form on:submit|preventDefault={sendEmail} class="card p-8 md:max-w-[50%] mx-auto">
+		<label class="label py-2">
 			<span>Name</span>
 			<input class="input" type="text" name="user_name" />
 		</label>
-		<label class="label">
+		<label class="label py-2">
 			<span>Email</span>
 			<input class="input" type="email" name="user_email" />
 		</label>
-		<label class="label">
+		<label class="label py-2">
 			<span>Message</span>
 			<textarea class="textarea resize-none" name="message" />
 		</label>
-		<input type="submit" value="Send" />
+		<input type="submit" value="Send" class="btn variant-ghost-primary" />
 	</form>
 </div>
