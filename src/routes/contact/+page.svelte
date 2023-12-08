@@ -1,5 +1,12 @@
 <script lang="ts">
 	import emailjs from '@emailjs/browser';
+	import { z } from 'zod';
+
+	const formSchema = z.object({
+		name: z.string().min(3, 'Must be 3 or more characters long'),
+		email: z.string().email('Please provide a real email'),
+		message: z.string().min(3, 'Your message is too short')
+	});
 
 	function sendEmail(e) {
 		emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_PUBLIC_KEY').then(
