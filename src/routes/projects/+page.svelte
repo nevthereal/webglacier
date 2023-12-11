@@ -8,7 +8,6 @@
 	import { _projects } from './+page';
 	import projectModal from '$lib/projectModal.svelte';
 
-	initializeStores();
 	const modalStore = getModalStore();
 
 	const triggerModal = (projectInfo: Project): void => {
@@ -25,7 +24,6 @@
 	<meta name="description" content="Showcase of Projects by Neville Brem" />
 </svelte:head>
 
-<Modal />
 <div class="px-8 md:px-16">
 	<div class="text-center my-8">
 		<h1 class="h1 text-7xl">Projects</h1>

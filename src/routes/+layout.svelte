@@ -1,10 +1,11 @@
 <script lang="ts">
 	import '../app.postcss';
+	import { LightSwitch, Modal, initializeStores } from '@skeletonlabs/skeleton';
 
-	// Floating UI for Popups
-	import { LightSwitch } from '@skeletonlabs/skeleton';
+	initializeStores();
 </script>
 
+<Modal />
 <div>
 	<nav class="h-[12dvh] md:h-[10dvh] p-2 md:p-6 flex justify-between font-bold">
 		<a class="btn" href="/"><img src="/img/favicon.png" alt="logo" class="w-16 md:w-20" /></a>
