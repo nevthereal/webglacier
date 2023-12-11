@@ -20,7 +20,11 @@
 	};
 </script>
 
-<title>WebGlacier - Projects</title>
+<svelte:head>
+	<title>WebGlacier - Projects</title>
+	<meta name="description" content="Showcase of Projects by Neville Brem" />
+</svelte:head>
+
 <Modal />
 <div class="px-8 md:px-16">
 	<div class="text-center my-8">
