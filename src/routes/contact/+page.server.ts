@@ -19,6 +19,7 @@ export const load: PageServerLoad = async () => {
 };
 
 export const actions = {
+	// the form is currently not working, because of some "403 - Forbidden error"
 	default: async ({ request }) => {
 		const form = await superValidate(request, schema);
 		if (!form.valid) return fail(400, { form });
@@ -34,19 +35,19 @@ export const actions = {
 				message: form.data.message
 			}
 		};
+
 		await fetch('https://api.emailjs.com/api/v1.0/email/send', {
 			method: 'POST',
 			body: JSON.stringify(data),
 			headers: {
 				'content-type': 'application/json'
 			}
-		}).then(({ ok }) => {
+		}).then(({ ok, status, statusText }) => {
+			console.log(status, statusText);
 			if (!ok) {
-				setMessage(form, 'Something went wrong. Try again later');
+				return setMessage(form, 'Something went wrong. Try again later');
 			}
-			setMessage(form, 'Your email was sent successfully!');
+			return setMessage(form, 'Your email was sent successfully!');
 		});
-
-		return { form };
 	}
 } satisfies Actions;
