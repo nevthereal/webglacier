@@ -1,28 +1,12 @@
 <script lang="ts">
-	import emailjs from '@emailjs/browser';
+	import { superForm } from 'sveltekit-superforms/client';
+	import type { PageData } from './$types';
 
-	interface SubmitMessage {
-		message: string;
-		color: 'red' | 'green';
-	}
+	export let data: PageData;
 
-	let submitMsg: SubmitMessage;
-
-	function sendEmail(e: any) {
-		emailjs.sendForm('service_m5dhn7u', 'template_0ea3ewq', e.target, '0tvqgP1sw-5fQmDto').then(
-			(result) => {
-				console.log('SUCCESS!', result.text);
-				submitMsg = { message: 'Your Email Was successfully sent', color: 'green' };
-				e.target.reset();
-			},
-			(error) => {
-				submitMsg = {
-					message: `Something went wrong with your submission... (Error: ${error})`,
-					color: 'red'
-				};
-			}
-		);
-	}
+	const { form, enhance, errors, message } = superForm(data.form, {
+		resetForm: true
+	});
 </script>
 
 <svelte:head>
@@ -70,26 +54,36 @@
 				</div>
 			</div>
 		</div>
-		<div class="my-8">
-			<h2 class="h2">Contact me via Email</h2>
-			<form on:submit|preventDefault={sendEmail} class="card p-8 my-2">
-				<label class="label py-2">
-					<span>Name</span>
-					<input class="input" type="text" name="user_name" />
-				</label>
-				<label class="label py-2">
-					<span>Email</span>
-					<input class="input" type="email" name="user_email" />
-				</label>
-				<label class="label py-2">
-					<span>Message</span>
-					<textarea class="textarea resize-none" name="message" />
-				</label>
-				<input type="submit" value="Send" class="btn variant-ghost-primary" />
-				{#if submitMsg}
-					<p class={`text-${submitMsg.color}-500`}>{submitMsg.message}</p>
-				{/if}
-			</form>
-		</div>
 	</div>
+	<form method="POST" use:enhance class="xl:w-[50%] mx-auto flex flex-col gap-4">
+		<div class="flex flex-col gap-2">
+			<label for="name">Name</label>
+			<input bind:value={$form.name} class="input" type="text" name="name" />
+			{#if $errors.name}
+				<span class="text-error-500">{$errors.name}</span>
+			{/if}
+		</div>
+		<div class="flex flex-col gap-2">
+			<label for="email">Email</label>
+			<input bind:value={$form.email} class="input" type="email" name="email" />
+			{#if $errors.email}
+				<span class="text-error-500">{$errors.email}</span>
+			{/if}
+		</div>
+		<div class="flex flex-col gap-2">
+			<label for="message">Message</label>
+			<textarea bind:value={$form.message} class="textarea resize-none" name="message" />
+			{#if $errors.message}
+				<span class="text-error-500">{$errors.message}</span>
+			{/if}
+		</div>
+		<div class="flex flex-col gap-2">
+			<button class="btn variant-ghost-primary border-b-2 border-b-primary-500 mx-auto"
+				>Send!</button
+			>
+			{#if $message}
+				<span class="text-warning-500">{$message}</span>
+			{/if}
+		</div>
+	</form>
 </div>
