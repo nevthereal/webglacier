@@ -2,8 +2,7 @@ import type { Actions, PageServerLoad } from './$types';
 import { z } from 'zod';
 import { superValidate, setMessage } from 'sveltekit-superforms/server';
 import { fail } from '@sveltejs/kit';
-
-const { EMAILJS_KEY } = import.meta.env;
+import { EMAILJS_KEY } from '$env/static/private';
 
 const schema = z
 	.object({
