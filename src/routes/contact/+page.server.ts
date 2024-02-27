@@ -31,7 +31,8 @@ export const actions = {
 			template_params: {
 				user_name: form.data.name,
 				user_email: form.data.email,
-				message: form.data.message
+				message: form.data.message,
+				site: 'webglacier'
 			}
 		};
 
