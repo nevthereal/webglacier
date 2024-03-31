@@ -13,7 +13,7 @@ export const _projects: Project[] = [
 		description:
 			'An e-commerce-store powered by Stripe. This is my first full-stack-app. Me and a friend wanted to sell instructions for custom LEGO constructions and I coded this store for this purpose. I used Stripe for checkout, Firebase Auth and an Express backend.',
 		stack: ['React', 'JavaScript', 'TailwindCSS', 'Stripe', 'Firebase', 'Express'],
-		ghLink: 'https://github.com/nevthereal/wolffebricks',
+		ghLink: 'https://github.com/nevthereal/wolffebricks-sveltekit',
 		webLink: 'https://wolffebricks.store',
 		icon: 'fa-brands fa-wolf-pack-battalion'
 	},
@@ -21,9 +21,9 @@ export const _projects: Project[] = [
 		name: 'BarMates',
 		description:
 			'This the homepage of my (currently) paused business for protein bars. I think it is, in a frontend aspect, my most beautiful project. I used some framer-motion hooks and included a newsletter form.',
-		stack: ['React', 'TypeScript', 'TailwindCSS', 'Framer-Motion'],
+		stack: ['Astro', 'TailwindCSS', 'daisy UI'],
 		ghLink: 'https://github.com/nevthereal/barmates',
-		webLink: 'https://barmates.netlify.app',
+		webLink: 'https://barmates.ch',
 		icon: 'fa-solid fa-cookie-bite'
 	}
 ];
