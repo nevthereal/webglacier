@@ -10,6 +10,7 @@ declare namespace App {
 interface Project {
 	name: string;
 	description: string;
+	body: string;
 	stack: string[];
 	ghLink: string;
 	webLink: string;

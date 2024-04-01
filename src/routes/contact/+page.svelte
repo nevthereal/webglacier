@@ -24,10 +24,12 @@
 			<h2 class="h2 my-2">Find me here</h2>
 			<div class="grid md:grid-cols-2 gap-4 my-2">
 				<div class="card p-4">
-					<h1 class="h1">Fiverr</h1>
+					<h1 class="h1">YouTube</h1>
 					<p>
-						Hire me on Fiverr: <a href="https://fiverr.com/nevthereal" class="anchor">@nevthereal</a
-						>
+						See web development content on my <a
+							class="anchor"
+							href="https://youtube.com/@nevillebrem">YouTube channel</a
+						>.
 					</p>
 				</div>
 				<div class="card p-4">

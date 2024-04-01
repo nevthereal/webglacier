@@ -42,8 +42,7 @@ export const actions = {
 			headers: {
 				'content-type': 'application/json'
 			}
-		}).then(({ ok, status, statusText }) => {
-			console.log(status, statusText);
+		}).then(({ ok }) => {
 			if (!ok) {
 				return setMessage(form, 'Something went wrong. Try again later');
 			}
