@@ -3,6 +3,7 @@ import { z } from 'zod';
 import { superValidate, setMessage } from 'sveltekit-superforms/server';
 import { fail } from '@sveltejs/kit';
 import { EMAILJS_KEY } from '$env/static/private';
+import { RateLimiter } from 'sveltekit-rate-limiter/server';
 
 const schema = z
 	.object({
@@ -17,11 +18,16 @@ export const load: PageServerLoad = async () => {
 	return { form };
 };
 
+const limiter = new RateLimiter({
+	IP: [5, 'h'],
+	IPUA: [10, 'h']
+});
+
 export const actions = {
-	// the form is currently not working, because of some "403 - Forbidden error"
-	default: async ({ request }) => {
-		const form = await superValidate(request, schema);
+	default: async (e) => {
+		const form = await superValidate(e.request, schema);
 		if (!form.valid) return fail(400, { form });
+		if (await limiter.isLimited(e)) return setMessage(form, 'Sent to many requests');
 
 		const data = {
 			service_id: 'service_m5dhn7u',
