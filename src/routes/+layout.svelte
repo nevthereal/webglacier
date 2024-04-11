@@ -1,6 +1,7 @@
 <script lang="ts">
 	import '../app.postcss';
 	import { LightSwitch, Modal, initializeStores } from '@skeletonlabs/skeleton';
+	import favicon from '$lib/img/favicon.png?enhanced';
 
 	initializeStores();
 </script>
@@ -8,7 +9,9 @@
 <Modal />
 <div>
 	<nav class="h-[12dvh] md:h-[10dvh] p-2 md:p-6 flex justify-between font-bold">
-		<a class="btn" href="/"><img src="/img/favicon.png" alt="logo" class="w-16 md:w-20" /></a>
+		<a class="btn" href="/"
+			><enhanced:img src={favicon} loading="eager" alt="logo" class="w-16 md:w-20" /></a
+		>
 		<div class="my-auto flex gap-4">
 			<a class="btn p-2" href="/projects">Projects</a>
 			<a class="btn p-2" href="/contact">Contact</a>
@@ -20,7 +23,7 @@
 	<slot />
 	<footer class="w-full md:grid md:grid-cols-3 p-6">
 		<div class="mx-auto">
-			<img src="/img/favicon.png" alt="logo" class="w-36 mx-auto hidden md:block" />
+			<enhanced:img src={favicon} loading="eager" alt="logo" class="w-36 mx-auto hidden md:block" />
 			<p class="font-serif italic font-bold text-center md:text-left mb-4 md:mb-0">
 				© WebGlacier 2023
 			</p>

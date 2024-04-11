@@ -23,7 +23,7 @@
 		<div class="my-8">
 			<h2 class="h2 my-2">Find me here</h2>
 			<div class="grid md:grid-cols-2 gap-4 my-2">
-				<div class="card p-4">
+				<div class="card variant-glass-surface p-4">
 					<h1 class="h1">YouTube</h1>
 					<p>
 						See web development content on my <a
@@ -32,7 +32,7 @@
 						>.
 					</p>
 				</div>
-				<div class="card p-4">
+				<div class="card variant-glass-surface p-4">
 					<h1 class="h1">𝕏</h1>
 					<p>
 						See my posts on X (formerly twitter): <a href="https://x.com/BremNeville" class="anchor"
@@ -40,13 +40,13 @@
 						>
 					</p>
 				</div>
-				<div class="card p-4">
+				<div class="card variant-glass-surface p-4">
 					<h1 class="h1">GitHub</h1>
 					<p>
 						Find me on GitHub: <a href="https://github.com/nevthereal" class="anchor">nevthereal</a>
 					</p>
 				</div>
-				<div class="card p-4">
+				<div class="card variant-glass-surface p-4">
 					<h1 class="h1">Instagram</h1>
 					<p>
 						Write me a DM on Instagram: <a href="https://instagram.com/nevillebrem" class="anchor"

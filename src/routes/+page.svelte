@@ -1,3 +1,8 @@
+<script lang="ts">
+	import me from '$lib/img/me.jpg?enhanced';
+	import graphic from '$lib/img/graphic.png?enhanced';
+</script>
+
 <svelte:head>
 	<title>WebGlacier - Projects</title>
 	<meta
@@ -20,14 +25,14 @@
 				class="btn mt-2 variant-ghost-primary border-b-2 border-b-primary-500 group w-min mx-auto md:mx-0"
 				href="#about"
 				><i
-					class="fa-solid fa-arrow-down pr-2 group-hover:translate-y-1 duration-200 ease-in-out"
+					class="fa-solid fa-arrow-right pr-2 group-hover:translate-x-1 duration-200 ease-in-out"
 				/>Find out more</a
 			>
 		</div>
 	</div>
 
 	<div class="flex mt-4 md:mt-0">
-		<img src="/img/graphic.png" alt="fancy graphic" class="w-[50%] m-auto" />
+		<enhanced:img src={graphic} loading="eager" alt="fancy graphic" class="w-[50%] m-auto" />
 	</div>
 
 	<div class="col-span-2 grid gap-2 md:gap-0 md:grid-flow-col p-6 md:p-16">
@@ -48,8 +53,9 @@
 
 <div id="about" class="py-8">
 	<div class="grid md:grid-cols-2">
-		<img
-			src="/img/me.jpg"
+		<enhanced:img
+			src={me}
+			loading="lazy"
 			alt="me"
 			class="m-auto md:w-[40%] w-[80%] rounded-xl shadow-lg shadow-black/20 hover:shadow-black/50 duration-200 ease-in-out"
 		/>
@@ -66,7 +72,7 @@
 		<h2 class="h2 m-auto">Skills & Technologies:</h2>
 		<div class="grid md:grid-cols-2 gap-4 my-6 mx-auto">
 			<div
-				class="card p-6 shadow-lg shadow-black/20 hover:shadow-black/50 duration-200 ease-in-out"
+				class="card variant-glass-primary p-6 shadow-lg shadow-black/20 hover:shadow-black/50 duration-200 ease-in-out"
 			>
 				<h3 class="h3">Stack 1</h3>
 				<ul class=" list-disc list-inside">
@@ -77,7 +83,7 @@
 				</ul>
 			</div>
 			<div
-				class="card p-6 shadow-lg shadow-black/20 hover:shadow-black/50 duration-200 ease-in-out"
+				class="card variant-glass-primary p-6 shadow-lg shadow-black/20 hover:shadow-black/50 duration-200 ease-in-out"
 			>
 				<h3 class="h3">Stack 2 (current)</h3>
 				<ul class=" list-disc list-inside">
